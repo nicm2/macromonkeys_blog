@@ -146,6 +146,7 @@ window.onload = wrap_img;
 </li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#4.3-Loops-and-Strings">4.3 Loops and Strings </a></li>
 <li class="toc-entry toc-h2"><a href="#4.4-Nested-Iteration">4.4 Nested Iteration </a></li>
 <li class="toc-entry toc-h2"><a href="#For-Each-Loops">For Each Loops </a>
 <ul>
@@ -402,12 +403,7 @@ Would you like to continue:
 <h2 id="4.2-For-Loops">
 <a class="anchor" href="#4.2-For-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.2 For Loops<a class="anchor-link" href="#4.2-For-Loops"> </a>
 </h2>
-<p>TODO: Explain for loops</p>
 <ul>
-<li>Explain initialization, boolean expression, and incrementation</li>
-<li>Differences between while and for (run times)</li>
-<li>Common mistakes (0 or 1, &lt; or &lt;=, etc.)</li>
-<li>subString() </li>
 <li>One of the most tested concepts in the APCSA exam</li>
 <li>Skills 3.C, 4.C, and 5.C</li>
 </ul>
@@ -545,6 +541,57 @@ Would you like to continue:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.3-Loops-and-Strings">
+<a class="anchor" href="#4.3-Loops-and-Strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3 Loops and Strings<a class="anchor-link" href="#4.3-Loops-and-Strings"> </a>
+</h2>
+<p>Strings can also be manipulated through the use of iteration. Strings can actually be thought of as an array of chars, so each char can also be manipulated as well!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"CodeCodeCode"</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">name</span><span class="p">.</span><span class="na">length</span><span class="p">();</span> <span class="n">i</span><span class="o">+=</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Co
+de
+Co
+de
+Co
+de
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
