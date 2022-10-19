@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -147,7 +147,12 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#4.4-Nested-Iteration">4.4 Nested Iteration </a></li>
-<li class="toc-entry toc-h2"><a href="#For-Each-Loops">For Each Loops </a></li>
+<li class="toc-entry toc-h2"><a href="#For-Each-Loops">For Each Loops </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#What-is-a-for-each-loop?">What is a for each loop? </a></li>
+<li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Stream">Stream </a></li>
 <li class="toc-entry toc-h2"><a href="#Final-Hacks">Final Hacks </a></li>
 </ul><!--
@@ -680,7 +685,64 @@ Too many monkeys jumping on the bed
 <h2 id="For-Each-Loops">
 <a class="anchor" href="#For-Each-Loops" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Each Loops<a class="anchor-link" href="#For-Each-Loops"> </a>
 </h2>
-<p>TODO: Explain for each loops (these are extra)</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="What-is-a-for-each-loop?">
+<a class="anchor" href="#What-is-a-for-each-loop?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a for each loop?<a class="anchor-link" href="#What-is-a-for-each-loop?"> </a>
+</h3>
+<p>As the name suggests, for-each loops are similar to for loops. In Java, the for-each loop is used to iterate through elements of arrays and collections (like ArrayList). It is also known as the enhanced for loop.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here is the syntax for a for-each loop:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="k">for</span><span class="p">(</span><span class="n">dataType</span> <span class="n">item</span> <span class="p">:</span> <span class="n">array</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>includes:</p>
+<ul>
+<li>array: an array or collection</li>
+<li>item: each value in an array or collection</li>
+<li>dataType: specify the type of data in the array (int)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Example</p>
 
 </div>
 </div>
@@ -696,12 +758,16 @@ Too many monkeys jumping on the bed
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
 
-        
+            <span class="c1">// create an array</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">12</span><span class="p">};</span>
+    
+            <span class="c1">// for each loop </span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
 
     <span class="p">}</span>
 <span class="p">}</span>
-
-<span class="n">ForEachLoops</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
@@ -711,6 +777,201 @@ Too many monkeys jumping on the bed
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Output:</p>
+<p>2 
+10
+5
+12</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this example we used for each loops to iterate through the array, "data" and print out each number. The code is saying that for each value in the array, print out the number.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So why not just stick to the for loop? What's the purpose?</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//For Loop</span>
+<span class="kt">char</span><span class="o">[]</span> <span class="n">word</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'m'</span><span class="p">,</span> <span class="sc">'o'</span><span class="p">,</span> <span class="sc">'n'</span><span class="p">,</span> <span class="sc">'k'</span><span class="p">,</span> <span class="sc">'e'</span><span class="p">,</span> <span class="sc">'y'</span><span class="p">};</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">word</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="o">++</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">word</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>m
+o
+n
+k
+e
+y
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//For Each Loop</span>
+<span class="kt">char</span><span class="o">[]</span> <span class="n">word</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'m'</span><span class="p">,</span> <span class="sc">'o'</span><span class="p">,</span> <span class="sc">'n'</span><span class="p">,</span> <span class="sc">'k'</span><span class="p">,</span> <span class="sc">'e'</span><span class="p">,</span> <span class="sc">'y'</span><span class="p">};</span>
+  
+<span class="k">for</span> <span class="p">(</span><span class="kt">char</span> <span class="n">letter</span><span class="p">:</span> <span class="n">word</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">letter</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>m
+o
+n
+k
+e
+y
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Both lines of codes yield the same results but the for-each loop is obviously much simpiler and easier to understand.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For each iteration, the for-each loop takes each element of the collection and stores it in a loop variable. Thus, it executes the code written in the body of the loop for each element of the array or collection.</p>
+<p>Most importantly, the traversal happens until the last element of the array or collection. No indexing is involved</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pros:</p>
+<ul>
+<li>makes code easier to read and understand</li>
+<li>eliminates possible coding mistakes</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>The drawback of the enhanced for loop (for-each loop) is that it cannot traverse the elements in reverse order. In the for each loop you do not have the option to skip any element because it does not work on an index basis. Moreover, you cannot traverse the odd or even elements only.</li>
+<li>limited variability to the collection</li>
+<li>situational</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Could I use a for-each loop to print out 4 of the 5 elements of an array only?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a for-each loop that adds up all the values of the array (sum):</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">numbers</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>and print the results</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
